@@ -3,3 +3,7 @@ server:
 spring:
   application:
     name: consumer-order
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:123@localhost:9000/eureka

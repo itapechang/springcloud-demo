@@ -1,0 +1,15 @@
+server:
+  port: 9000  #eureka server的端口号
+  #因为当前eureka是单机的，所以我们需要做一些配置
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://admin:123@localhost:9000/eureka
+security:
+  basic:
+    enabled: true  #开启安全配置，需要密码，若不需要，设置为false
+  user:
+    name: admin
+    password: 123  #在配置了用户名和密码后，可以修改地址使用curl风格
