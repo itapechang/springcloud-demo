@@ -1,0 +1,9 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: 06consumer-eureka-ribbon
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:123@localhost:9000/eureka

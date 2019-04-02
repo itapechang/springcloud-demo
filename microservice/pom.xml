@@ -12,7 +12,9 @@
         <module>01provider-user</module>
         <module>02consumer-order</module>
         <module>03eureka-server</module>
-        <module>04provider-user01</module>
+        <module>04provider-eureka</module>
+        <module>05consumer-eureka</module>
+        <module>06consumer-eureka-ribbon</module>
     </modules>
 
     <!--标记为springboot项目-->
