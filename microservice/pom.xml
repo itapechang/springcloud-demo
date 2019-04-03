@@ -15,6 +15,8 @@
         <module>04provider-eureka</module>
         <module>05consumer-eureka</module>
         <module>06consumer-eureka-ribbon</module>
+        <module>07consumer-eureka-ribbon-config</module>
+        <module>08consumer-eureka-ribbon-config-annotation</module>
     </modules>
 
     <!--标记为springboot项目-->

@@ -9,4 +9,4 @@ spring:
     name: 04provider-eureka  #名字和01的提供者一样，默认是一个集群，服务中心就会自动启动负载均衡机制
 
 server:
-  port: 8083
+  port: 8070
