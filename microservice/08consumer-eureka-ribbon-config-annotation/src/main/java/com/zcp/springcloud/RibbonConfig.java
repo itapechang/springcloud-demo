@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Configuration;
  * @since 1.0.0
  */
 @Configuration
+@ABC //此注解没有意义，给compentScan作判断用的，被该注解标记的类不会被扫描到（谁配了它就起作用，相当于局部配置）
 public class RibbonConfig {
     //ribbon的规则
 

@@ -6,6 +6,9 @@ import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.ribbon.RibbonClient;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.FilterType;
+import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
 /**
@@ -17,6 +20,7 @@ import org.springframework.web.client.RestTemplate;
 @EnableEurekaClient
 //给多个服务开启负载均衡@RibbonClients(@RibbonClient("04provider-eureka"),@RibbonClient("04provider-eureka"))
 @RibbonClient(value = "04provider-eureka",configuration = RibbonConfig.class) //ribbon规则(由轮询交叉变换，变为随机负载)
+@ComponentScan(excludeFilters = {@ComponentScan.Filter(type = FilterType.ANNOTATION,value = ABC.class)})  //凡是类上面有ABC注解的都不会被扫描到
 public class ConsumerApp {
 
     @Bean
