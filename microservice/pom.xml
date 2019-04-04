@@ -18,6 +18,7 @@
         <module>07consumer-eureka-ribbon-config</module>
         <module>08consumer-eureka-ribbon-config-annotation</module>
         <module>09consumer-eureka-ribbon-config-properties</module>
+        <module>10consumer-eureka-feign</module>
     </modules>
 
     <!--标记为springboot项目-->

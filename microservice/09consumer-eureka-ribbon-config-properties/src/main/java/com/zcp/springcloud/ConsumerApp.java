@@ -24,12 +24,12 @@ public class ConsumerApp {
 
     @Bean
     @LoadBalanced//给当前对象开启负载均衡，具体是在调用@RibbonClient("04provider-eureka")这个配置设置的服务的时候开启
-    public RestTemplate getTemp(){
+    public RestTemplate getTemp() {
         return new RestTemplate();
     }
 
-    public static void main(String[] args){
-        SpringApplication.run(ConsumerApp.class,args);
+    public static void main(String[] args) {
+        SpringApplication.run(ConsumerApp.class, args);
     }
 }
 
