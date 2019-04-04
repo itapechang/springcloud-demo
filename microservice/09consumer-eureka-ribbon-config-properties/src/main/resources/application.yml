@@ -1,0 +1,12 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: 09consumer-eureka-ribbon-config-properties
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:123@localhost:9000/eureka
+04provider-eureka:   #写服务名,给某个服务配置负载均衡规则
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
