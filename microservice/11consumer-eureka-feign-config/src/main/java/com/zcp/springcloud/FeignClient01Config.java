@@ -2,12 +2,14 @@ package com.zcp.springcloud;
 
 import feign.Contract;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
 /**
  * @author zcp
  * @create 2019/4/4
  * @since 1.0.0
  */
+@Configuration
 public class FeignClient01Config {
 
     @Bean
